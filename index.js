@@ -25,8 +25,11 @@ text : phone + " " + query
 }
 
 transporter.sendMail(mailOptions , (err,info) => {
-if(err)		console.log("mail error " ,err);
-else		console.log("mail send " ,info.response);
+if (err) {
+      console.log("Mail error:", err);
+    } else {
+      console.log("Mail sent:", info.response);
+    }
 })
 }
 
